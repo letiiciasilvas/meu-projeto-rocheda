@@ -1,117 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table {
-            width: 1000px;
-            border-collapse: collapse;
-        }
-        tr.linha {
-        background-color: blueviolet;
-
-        }
-    
-        td {
-        border: 1px solid black;
-        padding: 8px;
-    }
-    </style>
+    <title>Barbearia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Minha Primeira Tabela</h1>
-    <!--
-    HIERARQUA DE TABELAS (simples)
-    TABLE = tabela
-        TABLE ROW = linha de tabela 
-            TABLE HEADER = cabeçalho da tabela 
-            TABLE DATA = dado de tabela 
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Barbearia Preço Baixo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    -->
-     <table>
-        <tr class="linha"> <!-- Primeira linha-->
-            <td> </td>
-            <td>Segunda </td>
-            <td> Terça</td>
-            <td>Quarta </td>
-            <td>Quinta </td>
-            <td>Sexta</td>
-        </tr>
-            <td>1º aula</td>
-            <td> Biologia </td>
-            <td> Geografia </td>
-            <td> Espanhol </td>
-            <td> Química </td>
-            <td> Banco de dados </td>
-        <tr>
-            <td>2º aula </td>
-            <td>Espanhol</td>
-            <td>Física</td>
-            <td>Inglês</td>
-            <td>História</td>
-            <td>Banco de dados</td>
-        </tr>
-        <tr>
-            <td>3º aula</td>
-            <td>Matemática 1</td>
-            <td>Matemática 2</td>
-            <td>Sociologia</td>
-            <td>Filosofia</td>
-            <td>Espanhol</td>
-        </tr>
-        <tr>
-            <td>4º aula</td>
-            <td>Matemática 1</td>
-            <td>Matemática 2</td>
-            <td>Design</td>
-            <td>Literatura</td>
-            <td>Português</td>
-        </tr>
-        <tr>
-            <td>5º aula</td>
-            <td>Sociologia</td>
-            <td>Ed. Física</td>
-            <td>Design</td>
-            <td>Artes</td>
-            <td>Biologia</td>
-        </tr>
-        <tr>
-            <td>6º aula</td>
-            <td>Inglês</td>
-            <td>Biologia</td>
-            <td>Física</td>
-            <td>Design</td>
-            <td>Física</td>
-        </tr>
-        <tr>
-            <td>7º aula</td>
-            <td>Literatura</td>
-            <td>Literatura</td>
-            <td>Português</td>
-            <td>Design</td>
-            <td>Português</td>
-        </tr>
-        <tr>
-            <td>8º aula</td>
-            <td>Geografia</td>
-            <td>História</td>
-            <td>Matemática 3</td>
-            <td>Ed. Física</td>
-            <td>Banco de dados</td>
-        </tr>
-        <tr>
-            <td>9º aula</td>
-            <td>Química</td>
-            <td>Artes</td>
-            <td>Matemática 3</td>
-            <td>Inglês</td>
-            <td>Banco de dados</td>
-        </tr>
-     </table>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Bem-vindo à Barbearia Preço Baixo</h1>
+        <p>Entre feio e saia lindo, gastando apenas o necessário.</p>
+    </div>
+
+    <!-- Serviços -->
+    <div class="container my-5" id="services">
+        <div class="section-title">
+            <h3>Serviços Oferecidos</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="./mullet3.jpeg" alt="Corte de Cabelo">
+                    <h4>Corte de Cabelo</h4>
+                    <p>Realizamos cortes modernos e estilosos para todos os tipos de cabelo.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="./barba.jpg" alt="Corte de Barba">
+                    <h4>Corte de Barba</h4>
+                    <p>Realizamos também seu corte de barba, trazendo estilo e sofisticação.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="./cabelo e barba.jpg" alt="Pacote Completo">
+                    <h4>Pacote Completo</h4>
+                    <p>Faça seu corte de cabelo e barba, e ganhe um descontinho!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="container my-5" id="contact">
+        <div class="section-title">
+            <h3>Entre em Contato</h3>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="Seu Email" required>
+            <input type="number" placeholder="Seu número" required>
+            <textarea rows="5" placeholder="Suas preferências" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Barbearia Preço Baixo. Pensando sempre no seu estilo.</p>
+        <p>Rua Marechal Deodoro, 123 -Acopiara, CE</p>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
